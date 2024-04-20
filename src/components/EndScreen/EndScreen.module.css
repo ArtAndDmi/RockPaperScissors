@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.column p {
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+    width: 250px;
+
+}
+
+.column button {
+    background-color: white;
+    border: none;
+    padding: 15px 40px;
+    color: #1e1e1e;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.column button:hover {
+    opacity: .7;
+}
+
+@media (max-width: 759px) {
+    .container {
+        flex-direction: column;
+        gap: 50px;
+    }
+}

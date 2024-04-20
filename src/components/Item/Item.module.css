@@ -1,0 +1,56 @@
+.wrapper {
+    width: 160px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.border {
+    width: 160px;
+    height: 160px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 -5px 1px 2px rgba(0, 0, 0, .3) inset;
+    cursor: pointer;
+    transition: .2s;
+    z-index: 0;
+}
+
+.container {
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 5px 1px 2px rgba(0, 0, 0, .3) inset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.border:hover {
+    width: 150px;
+    height: 150px;
+}
+
+.win {
+    animation: win linear infinite 1s;
+}
+
+@keyframes win {
+    0% {
+        width: 160px;
+        height: 160px;
+    }
+    50% {
+        width: 150px;
+        height: 150px;
+    }
+    100% {
+        width: 160px;
+        height: 160px;
+    }
+}
